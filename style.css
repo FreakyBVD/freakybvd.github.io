@@ -12,8 +12,6 @@
   --text: rgb(255, 255, 255);
   --padding: 30px;
   --margin: 15px;
-  --custom-ease-out: cubic-bezier(0, 0, 0, 0.75);
-  --custom-ease-in: cubic-bezier(0.75, 0, 1, 1);
   --border-radius: 50px;
 }
 
