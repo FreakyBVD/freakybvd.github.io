@@ -5,17 +5,19 @@
     <title>karamu</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="odometer-theme-minimal.css" />
-    <script src="odometer.min.js"></script>
+    <script src="odometer.min.js" defer></script>
     <script
       src="https://kit.fontawesome.com/41a1bce369.js"
       crossorigin="anonymous"
+      defer
     ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="card">
+    <div class="card" id="card">
       <div class="title">
         <div class="pfp">
-          <img src="img/pfp.gif" />
+          <img src="img/pfp.gif" alt="profile picture" />
           <span class="status" title="online"></span>
         </div>
         <h1>
@@ -27,28 +29,33 @@
         <p>14y/o scottish laddie with a passion for ui design and coding</p>
       </div>
       <hr />
-      <h2>Live Subcount</h2>
+      <h2>live subcount</h2>
       <div class="subCount">
-        <img
-          id="subCountPfp"
-          src="https://yt3.ggpht.com/negROtxEBl7MbCDA9Ll-ux_LsHyF6iGF1EA45OiaB_Sng1woX9BznSxTLI1nZAE_XRCadYhJyg=s200-c-k-c0x00ffffff-no-rj"
-        />
-        <h1 class="odometer" id="subCounter"></h1>
+        <img id="subCountPfp" alt="youtube profile picture" />
+        <h1 id="subCounter" class="odometer"></h1>
       </div>
       <hr />
-      <h2>Socials</h2>
+      <h2>socials</h2>
       <div class="socials">
-        <a href="https://www.youtube.com/@兀" target="_blank">
-          <button class="fa-brands fa-youtube icon"></button>
+        <a
+          href="https://www.youtube.com/@兀"
+          target="_blank"
+          title="youtube channel"
+        >
+          <button class="icon fa-brands fa-youtube"></button>
         </a>
-        <a href="https://discord.gg/yFgxgBMC6G" target="_blank">
-          <button class="fa-brands fa-discord icon"></button>
+        <a
+          href="https://discord.gg/yFgxgBMC6G"
+          target="_blank"
+          title="discord server"
+        >
+          <button class="icon fa-brands fa-discord"></button>
         </a>
-        <a href="https://x.com/karamutango" target="_blank">
-          <button class="fa-brands fa-twitter icon"></button>
+        <a href="https://x.com/karamutango" target="_blank" title="twitter">
+          <button class="icon fa-brands fa-twitter"></button>
         </a>
       </div>
     </div>
+    <p class="lastUpdated">last updated jan 8th 2026</p>
   </body>
-  <script src="script.js"></script>
 </html>
