@@ -65,7 +65,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: 140px 120px;
+    background-position: 140px 100px;
   }
 }
 
@@ -81,8 +81,8 @@ body {
   color: var(--text);
   background: var(--background);
   background-image: url("img/tile.svg");
-  background-size: 140px 120px;
-  animation: background 3s linear infinite;
+  background-size: 140px 100px;
+  animation: background 2.5s linear infinite;
 }
 
 /* card */
@@ -223,6 +223,7 @@ body {
 /* sub count */
 
 .card .subCount {
+  height: 60px;
   display: flex;
   align-items: center;
   gap: var(--margin);
@@ -238,9 +239,19 @@ body {
 }
 
 .card .subCount img {
+  display: none;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.card .subCount #subCounter {
+  display: none;
+}
+
+.card .subCount .spinner {
+  font-size: 30px;
+  animation: spin 1s linear infinite;
 }
 
 /* footer */

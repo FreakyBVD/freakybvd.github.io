@@ -3,6 +3,7 @@ const statusIndicator = document.querySelector(".status");
 const letters = document.querySelectorAll(".title h1 span");
 const subCountPfp = document.getElementById("subCountPfp");
 const subCounter = document.getElementById("subCounter");
+const subCountSpinner = document.getElementById("subCountSpinner");
 
 // animations stuff
 
@@ -36,6 +37,8 @@ fetch("https://api.lanyard.rest/v1/users/902294338283929611")
 
 // sub count
 
+var subCountLoaded = false;
+
 function getSubCount() {
   if (!document.hasFocus()) return;
 
@@ -47,6 +50,9 @@ function getSubCount() {
       const channel = json.items[0];
       subCountPfp.src = channel.snippet.thumbnails.default.url;
       subCounter.textContent = channel.statistics.subscriberCount;
+      subCountPfp.style.display = "block";
+      subCounter.style.display = "block";
+      subCountSpinner.style.display = "none";
     });
 }
 
