@@ -37,8 +37,6 @@ fetch("https://api.lanyard.rest/v1/users/902294338283929611")
 
 // sub count
 
-var subCountLoaded = false;
-
 function getSubCount() {
   if (!document.hasFocus()) return;
 
