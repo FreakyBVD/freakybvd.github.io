@@ -56,3 +56,10 @@ function getSubCount() {
 
 getSubCount();
 setInterval(getSubCount, 3000);
+
+// ram easter egg
+
+document.addEventListener("selectionchange", () => {
+  const selection = document.getSelection().toString();
+  document.body.classList.toggle("ram", selection === "ram");
+});
